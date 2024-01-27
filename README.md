@@ -24,10 +24,6 @@ The repository is organized into folders corresponding to each challenge:
 - **2-Challenge-Vision**: Azure AI Vision solution.
 - **3-Challenge-Doc-Intelligence**: Intelligent Document Processing solution with Azure AI Document Intelligence.
 
-Certainly! Here's an improved version of the "Resources" section:
-
-Here's the improved version of the document with corrected spellings, grammar, structure, and formatting:
-
 ## Resources
 
 ### Challenges:
