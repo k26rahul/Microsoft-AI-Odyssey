@@ -1,0 +1,92 @@
+[
+  {
+    "intent": "GetTime",
+    "language": "en-us",
+    "text": "what is the time?"
+  },
+  {
+    "intent": "GetTime",
+    "language": "en-us",
+    "text": "what's the time?"
+  },
+  {
+    "intent": "GetTime",
+    "language": "en-us",
+    "text": "what time is it?"
+  },
+  {
+    "intent": "GetTime",
+    "language": "en-us",
+    "text": "tell me the time"
+  },
+  {
+    "intent": "GetTime",
+    "language": "en-us",
+    "text": "can you tell me the current time?"
+  },
+  {
+    "intent": "GetTime",
+    "language": "en-us",
+    "text": "show me the time please"
+  },
+  {
+    "intent": "GetDay",
+    "language": "en-us",
+    "text": "what day is it?"
+  },
+  {
+    "intent": "GetDay",
+    "language": "en-us",
+    "text": "what's the day?"
+  },
+  {
+    "intent": "GetDay",
+    "language": "en-us",
+    "text": "what is the day today?"
+  },
+  {
+    "intent": "GetDay",
+    "language": "en-us",
+    "text": "what day of the week is it?"
+  },
+  {
+    "intent": "GetDay",
+    "language": "en-us",
+    "text": "can you tell me the current day?"
+  },
+  {
+    "intent": "GetDay",
+    "language": "en-us",
+    "text": "show me the day please"
+  },
+  {
+    "intent": "GetDate",
+    "language": "en-us",
+    "text": "what date is it?"
+  },
+  {
+    "intent": "GetDate",
+    "language": "en-us",
+    "text": "what's the date?"
+  },
+  {
+    "intent": "GetDate",
+    "language": "en-us",
+    "text": "what is the date today?"
+  },
+  {
+    "intent": "GetDate",
+    "language": "en-us",
+    "text": "what's today's date?"
+  },
+  {
+    "intent": "GetDate",
+    "language": "en-us",
+    "text": "can you tell me the current date?"
+  },
+  {
+    "intent": "GetDate",
+    "language": "en-us",
+    "text": "show me the date please"
+  }
+]

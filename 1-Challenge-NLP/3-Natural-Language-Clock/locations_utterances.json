@@ -1,0 +1,86 @@
+[
+  {
+    "intent": "GetTime",
+    "language": "en-us",
+    "text": "what time is it in London?",
+    "entities": [
+      {
+        "category": "Location",
+        "offset": 19,
+        "length": 6
+      }
+    ]
+  },
+  {
+    "intent": "GetTime",
+    "language": "en-us",
+    "text": "what's the time in New York?",
+    "entities": [
+      {
+        "category": "Location",
+        "offset": 17,
+        "length": 8
+      }
+    ]
+  },
+  {
+    "intent": "GetTime",
+    "language": "en-us",
+    "text": "what time is it in Tokyo?",
+    "entities": [
+      {
+        "category": "Location",
+        "offset": 17,
+        "length": 5
+      }
+    ]
+  },
+  {
+    "intent": "GetDay",
+    "language": "en-us",
+    "text": "what day is it in Paris?",
+    "entities": [
+      {
+        "category": "Location",
+        "offset": 14,
+        "length": 5
+      }
+    ]
+  },
+  {
+    "intent": "GetDay",
+    "language": "en-us",
+    "text": "what's the day in Sydney?",
+    "entities": [
+      {
+        "category": "Location",
+        "offset": 14,
+        "length": 6
+      }
+    ]
+  },
+  {
+    "intent": "GetDate",
+    "language": "en-us",
+    "text": "what date is it in Los Angeles?",
+    "entities": [
+      {
+        "category": "Location",
+        "offset": 15,
+        "length": 11
+      }
+    ]
+  },
+  {
+    "intent": "GetDate",
+    "language": "en-us",
+    "text": "what's the date in Dubai?",
+    "entities": [
+      {
+        "category": "Location",
+        "offset": 15,
+        "length": 5
+      }
+    ]
+  }
+]
