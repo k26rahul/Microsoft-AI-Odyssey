@@ -44,5 +44,6 @@ The repository is organized into folders corresponding to each challenge:
 ### Additional Resources:
 
 - GitHub Repository: [MicrosoftLearning/mslearn-ai-language](https://github.com/MicrosoftLearning/mslearn-ai-language/)
+- GitHub Repository: [MicrosoftLearning/mslearn-ai-vision](https://github.com/MicrosoftLearning/mslearn-ai-vision)
 - PDF: [Choose your Microsoft Credential](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RW1dopH)
 - [Learn more about Microsoft Credentials](https://learn.microsoft.com/en-gb/credentials/?wt.mc_id=appliedskills_infographic_content_wwl)
