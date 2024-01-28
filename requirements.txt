@@ -10,3 +10,4 @@ azure-ai-language-questionanswering
 azure-ai-language-conversations
 azure-ai-translation-text==1.0.0b1
 azure-cognitiveservices-speech==1.30.0
+playsound
