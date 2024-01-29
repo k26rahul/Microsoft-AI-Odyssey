@@ -4,7 +4,7 @@ Welcome to the repository for the Microsoft AI Odyssey Challenge! This repositor
 
 ## Overview
 
-The [Microsoft AI Odyssey Challenge](https://www.microsoft.com/ai-odyssey) is designed for developers interested in advancing their skills in the field of AI. The challenge consists of two levels, each focusing on different aspects of AI development using Azure AI services.
+The [Microsoft AI Odyssey Challenge](https://www.microsoft.com/en-in/campaign/AIOdyssey/) is designed for developers interested in advancing their skills in the field of AI. The challenge consists of two levels, each focusing on different aspects of AI development using Azure AI services.
 
 ### Levels
 
