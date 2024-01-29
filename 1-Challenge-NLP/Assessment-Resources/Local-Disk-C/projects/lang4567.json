@@ -1,0 +1,140 @@
+{
+    "projectFileVersion": "2022-10-01-preview",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "Conversation",
+        "settings": {
+            "confidenceThreshold": 0
+        },
+        "projectName": "lang4567",
+        "multilingual": false,
+        "description": "Language understanding demo",
+        "language": "en-us"
+    },
+    "assets": {
+        "projectKind": "Conversation",
+        "intents": [
+            {
+                "category": "None"
+            },
+            {
+                "category": "Order"
+            }
+        ],
+        "entities": [
+            {
+                "category": "product",
+                "compositionSetting": "combineComponents",
+                "requiredComponents": [
+                    "learned"
+                ]
+            },
+            {
+                "category": "geography",
+                "compositionSetting": "combineComponents"
+            }
+        ],
+        "utterances": [
+            {
+                "text": "What should I do?",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Nice to meet you",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "I'm looking for some widgets",
+                "language": "en-us",
+                "intent": "Order",
+                "entities": [
+                    {
+                        "category": "product",
+                        "offset": 21,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Send me gizmos",
+                "language": "en-us",
+                "intent": "Order",
+                "entities": [
+                    {
+                        "category": "product",
+                        "offset": 8,
+                        "length": 6
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I need widgets",
+                "language": "en-us",
+                "intent": "Order",
+                "entities": [
+                    {
+                        "category": "product",
+                        "offset": 7,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "Please send me a gizmo",
+                "language": "en-us",
+                "intent": "Order",
+                "entities": [
+                    {
+                        "category": "product",
+                        "offset": 17,
+                        "length": 5
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "I want to order a new bracket",
+                "language": "en-us",
+                "intent": "Order",
+                "entities": [
+                    {
+                        "category": "product",
+                        "offset": 22,
+                        "length": 7
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "text": "What is the meaning of life?",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Are you a robot?",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            },
+            {
+                "text": "Who are you?",
+                "language": "en-us",
+                "intent": "None",
+                "entities": [],
+                "dataset": "Train"
+            }
+        ]
+    }
+}

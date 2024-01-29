@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Build a natural language processing solution with Azure AI Language</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jquery-3.6.1.js"></script>
+<script>
+jQuery(document).ready(function($){
+  $('.toggle').on('click', function(){
+    var targetBox = $(this).attr('target-box'); /* Find the target email */
+    $('.email').not(targetBox).hide(); /* Hide other emails */
+    if (!$(targetBox).is(':visible')) {
+      $(this).css("color", "white");
+      $(this).css("font-weight", "normal");
+      $(targetBox).toggle(); /* toggle the current state if not already visible */
+    }    
+    
+  });
+
+  $('.markasunread').on('click', function(){
+    var targetLink = $(this).attr('target-link');
+    $(targetLink).css("color", "black");
+    $(targetLink).css("font-weight", "bold");
+  });
+
+  $('.inboxsubject').on("mouseover", function() {
+    $(this).css("color", "white");
+  }).on("mouseout", function() {
+    $(this).css("color", "black");
+  });
+});
+</script>
+
+<style>
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  
+  height: 100%;
+}
+
+.left {
+  width: 25%;
+  margin:0px;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.email1 {
+    display: none;
+}
+ .email2 {
+    display: none;
+}
+ .email3 {
+    display: none;
+}
+ .email4 {
+    display: none;
+}
+ .email5 {
+    display: none;
+}
+ .email6 {
+    display: none;
+}
+ 
+
+.inboxemail {
+  font-size: smaller;
+}
+
+.inboxsubject {
+  font-size: large;
+  color:"black";
+  font-weight: bold;
+}
+
+.inboxsubject:hover {
+  color: #ffffff;
+}
+
+.inboxsubject:link {
+  color:black;
+}
+
+.inboxsubject:visited {
+  color:black;
+}
+
+#link1:hover {
+    color:white;
+}
+ #link2:hover {
+    color:white;
+}
+ #link3:hover {
+    color:white;
+}
+ #link4:hover {
+    color:white;
+}
+ #link5:hover {
+    color:white;
+}
+ #link6:hover {
+    color:white;
+}
+ 
+
+table {
+		border:1px solid #C0C0C0;
+		border-collapse:collapse;
+		padding:5px;
+	}
+th {
+		border:1px solid #C0C0C0;
+		padding:5px;
+		background:#F0F0F0;
+	}
+td {
+		border:1px solid #C0C0C0;
+		padding:5px;
+	}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column left" style="background-color:rgb(87, 152, 248);">
+    <h2>Inbox</h2><hr>
+    <p>
+<a href="#" id="link1" class="inboxsubject toggle" target-box="#email1">General guidelines</a><br>
+<a class="inboxemail">cto@contoso.com</a>
+</p><p>
+<a href="#" id="link2" class="inboxsubject toggle" target-box="#email2">Existing environment</a><br>
+<a class="inboxemail">networkadmin@contoso.com</a>
+</p><p>
+<a href="#" id="link3" class="inboxsubject toggle" target-box="#email3">Proof of Concept (PoC)</a><br>
+<a class="inboxemail">projman@contoso.com</a>
+</p><p>
+<a href="#" id="link4" class="inboxsubject toggle" target-box="#email4">Invoice validation</a><br>
+<a class="inboxemail">projman@contoso.com</a>
+</p><p>
+<a href="#" id="link5" class="inboxsubject toggle" target-box="#email5">Chatbot backend</a><br>
+<a class="inboxemail">projman@contoso.com</a>
+</p><p>
+<a href="#" id="link6" class="inboxsubject toggle" target-box="#email6">Status - Complete</a><br>
+<a class="inboxemail">cto@contoso.com</a>
+</p>
+  </div>
+  <div class="column right" style="background-color:rgb(254, 254, 254);">
+    <div id='email1' class='email email1'>
+<p class='emailsubject'><strong>Subject: General guidelines</strong></p>
+            From: <a href='mailto:#'>cto@contoso.com</a><br/>
+            To: <a href='mailto:#'>User1-37340736@LODSPRODMCA.onmicrosoft.com</a><br/>
+<div style="display: flex; justify-content: flex-end">
+<div>
+<a href="#" class="markasunread" target-link="#link1">Mark as unread</a>
+                    
+</div>
+</div>
+<hr>
+            <p><strong>Some resources in this scenario might take several minutes to deploy. Please review the other tasks in the lab while the deployment completes. You may perform other tasks that do not rely on that deployment.</strong></p>
+<p>Thank you for agreeing to help our team build a natural language processing solution with Azure AI Language.</p>
+<p>We have some general guidelines that you must follow when you perform tasks in Azure.</p>
+<ul>
+<li>When creating objects, use the default settings unless there are requirements that require different configurations.</li>
+<li>Only create, delete, or modify objects to achieve the stated requirements. Unnecessary changes to the environment may adversely affect your final score.</li>
+<li>If there are multiple approaches to achieving a goal, always choose the approach the requires the least amount of administrative effort.</li>
+</ul>
+<p>Thanks,</p>
+<p>Chief Technology Officer (CTO)</p>
+</div>
+ <div id='email2' class='email email2'>
+<p class='emailsubject'><strong>Subject: Existing environment</strong></p>
+            From: <a href='mailto:#'>networkadmin@contoso.com</a><br/>
+            To: <a href='mailto:#'>User1-37340736@LODSPRODMCA.onmicrosoft.com</a><br/>
+<div style="display: flex; justify-content: flex-end">
+<div>
+<a href="#" class="markasunread" target-link="#link2">Mark as unread</a>
+                    
+</div>
+</div>
+<hr>
+            <p>Here are your credentials for accessing our resources in Azure:</p>
+<p>User name: <strong>User1-37340736@LODSPRODMCA.onmicrosoft.com</strong><br>
+Password: <strong>Hk0Be9!!Dd</strong></p>
+<p>You can find these credentials by clicking the <strong>Instructions</strong> tab.</p>
+<p>You have been granted rights to the <strong>RG1</strong> resource group. Please create all Azure objects in this resource group.</p>
+<p>We have also created a storage account named <strong>sa37340736</strong> for you to use.</p>
+<p>Thanks,</p>
+<p>Network administrator</p>
+</div>
+ <div id='email3' class='email email3'>
+<p class='emailsubject'><strong>Subject: Proof of Concept (PoC)</strong></p>
+            From: <a href='mailto:#'>projman@contoso.com</a><br/>
+            To: <a href='mailto:#'>User1-37340736@LODSPRODMCA.onmicrosoft.com</a><br/>
+<div style="display: flex; justify-content: flex-end">
+<div>
+<a href="#" class="markasunread" target-link="#link3">Mark as unread</a>
+                    <br><br>Mark as completed <input type='checkbox' id='3' name='email3' value='email3'>
+</div>
+</div>
+<hr>
+            <p>Hello,</p>
+<p>Thank you for agreeing to help our IT department build a Proof of Concept (PoC) to classify text. A colleague has started building a sample solution that can recognize location information and email addresses. We need you to help finalize the solution and connect it to Azure to prove that the technology is ready.</p>
+<p><strong>This is your task:</strong></p>
+<p>You need to create a PoC solution that can recognize location information and email addresses. The solution must use the model that best fits the use case. The solution must meet the following requirements:</p>
+<ul>
+<li>Create a new Language service named <strong>lang-37340736</strong> in <strong>RG1</strong>.</li>
+<li>Ensure that the Language service supports custom text classification and Named Entity Recognition (NER).</li>
+<li>Ensure that the Language service uses the Free tier and is provisioned in the North Europe Azure region.</li>
+<li>Use the existing <strong>sa37340736</strong> storage account.</li>
+<li>Ensure that the source code for the PoC app connects to the appropriate model in the newly created resource. You can find the app in C:\PoC. There is a C# version and a Python version of the app. Modify whichever version you prefer. You do NOT need to modify both versions. When you complete your task, the app must continue to function correctly.</li>
+</ul>
+<p>Thanks,</p>
+<p>Project Management Team</p>
+</div>
+ <div id='email4' class='email email4'>
+<p class='emailsubject'><strong>Subject: Invoice validation</strong></p>
+            From: <a href='mailto:#'>projman@contoso.com</a><br/>
+            To: <a href='mailto:#'>User1-37340736@LODSPRODMCA.onmicrosoft.com</a><br/>
+<div style="display: flex; justify-content: flex-end">
+<div>
+<a href="#" class="markasunread" target-link="#link4">Mark as unread</a>
+                    <br><br>Mark as completed <input type='checkbox' id='4' name='email4' value='email4'>
+</div>
+</div>
+<hr>
+            <p>Hello,</p>
+<p>We are extracting information from our webshop logs to validate our invoicing system. We need you to upload the logs to the training model and label them correctly. After labeling, you must train the model so that one of our developers can use it in a verification process later on.</p>
+<p><strong>This is your task:</strong></p>
+<p>You need to use Named Entity Recognition (NER) to extract names and prices from log files received from the webshop. The project you create must meet the following requirements:</p>
+<ul>
+<li>The project must be named webshop.</li>
+<li>The language must be English (US) and not multilingual.</li>
+<li>The project must use two new entities named Price and CustomerName.</li>
+<li>The sample data in the <strong>sa37340736/webshop</strong> container must be labeled with Price and CustomerName.</li>
+<li>Model training must be started.</li>
+</ul>
+<p>You do not need to wait for the training to complete to start the next task.</p>
+<p>Thanks,</p>
+<p>Project Management Team</p>
+</div>
+ <div id='email5' class='email email5'>
+<p class='emailsubject'><strong>Subject: Chatbot backend</strong></p>
+            From: <a href='mailto:#'>projman@contoso.com</a><br/>
+            To: <a href='mailto:#'>User1-37340736@LODSPRODMCA.onmicrosoft.com</a><br/>
+<div style="display: flex; justify-content: flex-end">
+<div>
+<a href="#" class="markasunread" target-link="#link5">Mark as unread</a>
+                    <br><br>Mark as completed <input type='checkbox' id='5' name='email5' value='email5'>
+</div>
+</div>
+<hr>
+            <p>Hello,</p>
+<p>We plan to build a chatbot app that will answer user queries and allow users to order products. We need you to build a Language Understanding solution that will be used by the chatbot.</p>
+<p><strong>This is your task:</strong></p>
+<p>You need to create a new Language Understanding project. The solution must meet the following requirements:</p>
+<ul>
+<li>Use the existing project definition of <strong>lang4567</strong> in the C:\projects folder.</li>
+<li>Use Standard training mode.</li>
+<li>Split the data into a ratio of 85 percent training and 15 percent testing.</li>
+<li>Configure the deployment of the model to use the name <strong>lang4567</strong>.</li>
+<li>Modify the source code of the CLU_PoC app to use the API endpoint of the deployed model. You can find the app in c:\CLU_PoC. There is a C# version and a Python version of the app. Modify whichever version you prefer. You do NOT need to modify both. Note that this is not production code, we will hard code client secrets for testing purposes.</li>
+<li>Ensure that the CLU_PoC app only prints intent values that have a confidence score of more than 80 percent.</li>
+</ul>
+<p>Thanks,</p>
+<p>Project Management Team</p>
+</div>
+ <div id='email6' class='email email6'>
+<p class='emailsubject'><strong>Subject: Status - Complete</strong></p>
+            From: <a href='mailto:#'>cto@contoso.com</a><br/>
+            To: <a href='mailto:#'>User1-37340736@LODSPRODMCA.onmicrosoft.com</a><br/>
+<div style="display: flex; justify-content: flex-end">
+<div>
+<a href="#" class="markasunread" target-link="#link6">Mark as unread</a>
+                    <br><br>Mark as completed <input type='checkbox' id='6' name='email6' value='email6'>
+</div>
+</div>
+<hr>
+            <p>Thank you for helping our team build a natural language processing solution with Azure AI Language.</p>
+<p>We look forward to working with you again.</p>
+<p>Regards,</p>
+<p>Chief Technology Officer (CTO)</p>
+</div>
+ 
+  </div>
+</div>

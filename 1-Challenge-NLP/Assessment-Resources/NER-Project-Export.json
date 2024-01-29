@@ -1,0 +1,238 @@
+{
+    "projectFileVersion": "2022-10-01-preview",
+    "stringIndexType": "Utf16CodeUnit",
+    "metadata": {
+        "projectKind": "CustomEntityRecognition",
+        "storageInputContainerName": "webshop",
+        "settings": {
+            "confidenceThreshold": 0
+        },
+        "projectName": "webshop",
+        "multilingual": false,
+        "description": "NER Project",
+        "language": "en-us"
+    },
+    "assets": {
+        "projectKind": "CustomEntityRecognition",
+        "entities": [
+            {
+                "category": "Price"
+            },
+            {
+                "category": "CustomerName"
+            }
+        ],
+        "documents": [
+            {
+                "location": "message1.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 10
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 141,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "message10.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 10
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 138,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "message2.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 12
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 149,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "message3.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 13
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 141,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "message4.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 12
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 140,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "message5.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 10
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 138,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "message6.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 10
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 138,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "message7.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 9
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 137,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "message8.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 14
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 142,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            },
+            {
+                "location": "message9.txt",
+                "language": "en-us",
+                "entities": [
+                    {
+                        "labels": [
+                            {
+                                "category": "CustomerName",
+                                "offset": 39,
+                                "length": 9
+                            },
+                            {
+                                "category": "Price",
+                                "offset": 137,
+                                "length": 3
+                            }
+                        ]
+                    }
+                ],
+                "dataset": "Train"
+            }
+        ]
+    }
+}
