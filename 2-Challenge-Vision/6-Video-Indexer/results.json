@@ -1,0 +1,39 @@
+{
+  "results": [
+    {
+      "accountId": "800b1bcf-9088-4fe6-92d0-212783e3cdc5",
+      "id": "178db03946",
+      "partition": null,
+      "externalId": null,
+      "metadata": null,
+      "name": "Media file 1",
+      "description": null,
+      "created": "2024-01-29T11:17:43.6933333+00:00",
+      "lastModified": "2024-01-29T11:21:06.6433333+00:00",
+      "lastIndexed": "2024-01-29T11:21:06.6433333+00:00",
+      "privacyMode": "Private",
+      "userName": "Rahul Maurya",
+      "isOwned": true,
+      "isBase": true,
+      "hasSourceVideoFile": true,
+      "state": "Processed",
+      "moderationState": "OK",
+      "reviewState": "None",
+      "processingProgress": "100%",
+      "durationInSeconds": 114,
+      "thumbnailVideoId": "178db03946",
+      "thumbnailId": "ea09e86e-708b-4b79-804e-13e0f552d189",
+      "searchMatches": [],
+      "indexingPreset": "Default",
+      "streamingPreset": "SingleBitrate",
+      "sourceLanguage": "en-US",
+      "sourceLanguages": ["en-US"],
+      "personModelId": "00000000-0000-0000-0000-000000000000"
+    }
+  ],
+  "nextPage": {
+    "pageSize": 25,
+    "skip": 0,
+    "done": true
+  }
+}
